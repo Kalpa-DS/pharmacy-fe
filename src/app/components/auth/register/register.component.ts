@@ -7,7 +7,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { UserRole } from 'src/app/enums/user-role.enum';
-import { UserService } from 'src/app/services/auth/user.service';
+import { UserService } from 'src/app/services/user/user.service';
 
 @Component({
   selector: 'app-register',

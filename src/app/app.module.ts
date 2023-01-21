@@ -13,6 +13,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { OrderComponent } from './components/order/order.component';
 import { ProductDetailsComponent } from './components/product/product-details/product-details.component';
 import { ProductListAdminComponent } from './components/product/product-list-admin/product-list-admin.component';
+import { ProductItemComponent } from './components/dashboard/product-item/product-item.component';
+import { CartComponent } from './components/cart/cart.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
