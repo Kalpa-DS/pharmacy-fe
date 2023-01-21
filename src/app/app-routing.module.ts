@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './components/auth/login/login.component';
 import { CartComponent } from './components/cart/cart.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductItemComponent } from './components/dashboard/product-item/product-item.component';
@@ -45,6 +46,10 @@ const routes: Routes = [
     data: {
       roles: [UserRole.Regular],
     },
+  },
+  {
+    path: 'auth/login',
+    component: LoginComponent,
   },
 ];
 
