@@ -1,8 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { ProductComponent } from './components/product/product.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ProductsListComponent } from './components/dashboard/products-list/products-list.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+
+import { OrderComponent } from './components/order/order.component';
+import { ProductDetailsComponent } from './components/product/product-details/product-details.component';
+import { ProductListAdminComponent } from './components/product/product-list-admin/product-list-admin.component';
+
+import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
@@ -15,7 +27,21 @@ import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    ProductComponent,
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent,
+    ProductsListComponent,
+    NavBarComponent,
+    OrderComponent,
+    ProductDetailsComponent,
+    ProductListAdminComponent,
+    ProductItemComponent,
+    CartComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
