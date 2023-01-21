@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './components/cart/cart.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductItemComponent } from './components/dashboard/product-item/product-item.component';
+import { OrderComponent } from './components/order/order.component';
 import { ProductComponent } from './components/product/product.component';
 import { UserRole } from './enums/user-role.enum';
 import { AuthGuard } from './guards/auth/auth.guard';
@@ -35,6 +37,14 @@ const routes: Routes = [
   {
     path: 'orders',
     component: OrderComponent,
+  },
+  {
+    path: 'dashboard',
+    canActivate: [AuthGuard, RoleGuard],
+    component: DashboardComponent,
+    data: {
+      roles: [UserRole.Regular],
+    },
   },
 ];
 
