@@ -32,6 +32,10 @@ const routes: Routes = [
       roles: [UserRole.Regular],
     },
   },
+  {
+    path: 'orders',
+    component: OrderComponent,
+  },
 ];
 
 @NgModule({
