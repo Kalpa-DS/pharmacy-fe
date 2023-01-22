@@ -23,14 +23,14 @@
 
     <!-- Product Pricing -->
     <div class="product-price">
-      <span>LKR {{ product.price }}</span>
-      <button
-        class="btn btn-primary"
-        [disabled]="product.boughtUserId"
-        (click)="buyProduct()"
-      >
-        {{ product.boughtUserId ? "Owned by " + product.boughtUserId : "Pay" }}
-      </button>
+      <span>$ {{ product.price }}</span>
     </div>
+    <button
+      class="btn btn-primary my-2"
+      [disabled]="product.boughtUserId"
+      (click)="buyProduct()"
+    >
+      {{ product.boughtUserId ? "Owned by " + product.boughtUserId : "Pay" }}
+    </button>
   </div>
 </main>
