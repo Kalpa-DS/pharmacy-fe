@@ -1,7 +1,7 @@
 <div class="container" *ngIf="products$ | async as products">
   <div class="row justify-content-center">
     <ng-container *ngFor="let product of products$ | async as products">
-      <div class="card col-lg-3 mx-2" *ngIf="product.boughtUserId == null">
+      <div class="card col-lg-4 mx-2" *ngIf="product.boughtUserId == null">
         <div
           [ngStyle]="{ 'background-image': 'url(' + product.imageUrl + ')' }"
           style="

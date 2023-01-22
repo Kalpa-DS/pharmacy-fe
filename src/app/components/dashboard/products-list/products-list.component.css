@@ -23,13 +23,13 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   height: 400px;
-  width: 100px;
+  width: 400px;
   overflow: hidden;
   margin: 20px 0;
 }
 
 .details {
-  background-color: #fff;
+  background-color: rgb(106, 106, 106);
   border-radius: 10px;
   padding: 20px;
   position: absolute;
